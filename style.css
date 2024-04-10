@@ -1,0 +1,407 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+main {
+  background-color: none;
+}
+
+header {
+  display: flex;
+  background-color: rgb(212, 212, 212);
+}
+
+.caja {
+  width: 20%;
+  padding: 40px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+header .logo {
+  flex-grow: 1;
+}
+
+header .usuario {
+  font-size: 36px;
+  text-align: right;
+  padding: 0 50px 0 0;
+  flex-grow: 8;
+}
+
+.iconos{
+  font-size: 18px;
+  margin:30px 15px 0 0;
+  
+}
+
+.iconos .person{
+  color: rgb(0, 160, 27); 
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.iconos .person:hover{
+  color: rgb(160, 0, 0); 
+  font-size: 30px;
+}
+
+.iconos a{
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.iconos a:hover{
+  color: red;
+  border-bottom: 3px solid red;
+  font-size: 32px;
+}
+
+
+input[type=text] {
+padding: 8px;
+margin-top: 2px;
+font-size: 17px;
+border: none;
+border:0.5px solid black;
+}
+
+.search-container button {
+  
+float: right;
+border-radius: 3px;
+padding: 8px 10px;
+margin-top: 12px;
+margin-right: 8px;
+background: #ddd;
+font-size: 17px;
+border: none;
+cursor: pointer;
+}
+
+.search-container button:hover {
+color: white;
+background-color: rgb(163, 3, 3);
+}
+
+
+.usuario p {
+  margin-top: 40px;
+  font-size: 23px;
+}
+
+.contenedor {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  
+}
+
+.navegador {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  
+}
+
+.servicios li {
+  font-size: 22px;
+  font-style: italic;
+  margin-right: 20px;
+  background-color: #e2e2e2;
+  width: 100%;
+  letter-spacing: 3px;
+  padding: 3px 3px;
+  display: inline;
+  border-radius: 8px 8px;
+  box-shadow: 3px 3px gray;
+  
+}
+
+.servicios a{
+  text-decoration: none;
+  color: black;
+}
+
+.servicios a:hover{
+      color:#ff0909 ;
+
+} 
+
+.servicios li:hover{
+  border-bottom:5px solid #017901 ;
+  font-size: 32px;
+  width: 20%;
+} 
+
+
+.navegador-dos {
+  display: flex;
+  width: 96%;
+  margin: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.especial {
+  margin: 50px 0;
+}
+
+.especial li {
+  border-bottom: 2px solid rgb(126, 126, 126);
+  border-radius: 5px 5px;
+  display: inline;
+  font-size: 16px;
+  margin-right: 5px;
+  padding: 5px 10px;
+}
+
+.especial li:hover{
+    border-bottom: 5px solid rgb(255, 9, 9);
+    
+}
+
+.especial a{
+  text-decoration: none;
+  color: black;
+}
+
+.especial a:hover{
+  color: #017901;
+  font-weight: bold;
+}
+
+.carousel-inner {
+  width: 70%;
+  margin: auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.banner {
+  font-family: "Rockwell Condensed";
+  height: auto;
+  top: 6%;
+
+  left: 68%;
+  width: 22%;
+}
+
+.banner h1 {
+  font-size: 80px;
+  width: 50%;
+}
+
+.banner h1 span {
+  color: #e91e1e;
+}
+
+h5 {
+  font-size: 20px;
+  width: 100%;
+  color: white;
+  font-family: sans-serif;
+  letter-spacing: 7px;
+  text-align: center;
+}
+
+.banner p {
+  font-size: 18px;
+  color: white;
+  width: 100%;
+
+  font-family: sans-serif;
+}
+
+.card span {
+  color: red;
+  font-weight: bold;
+}
+
+#letra{
+  letter-spacing: 2px; 
+  color: white;
+  font-weight: lighter
+}
+
+.card-title {
+  letter-spacing: 8px;
+}
+
+.descuento {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.btn {
+  font-size: 25px;
+  font-family: sans-serif;
+}
+
+.descuento img {
+  height: 300px;
+  width: 300px;
+}
+
+.descuento button {
+  margin-top: 20px;
+}
+.publicidad {
+    z-index: -1;
+  width: 73%;
+  margin: auto;
+}
+
+.mensajes{
+    justify-content: end;
+        width: 70%;
+       display: flex;
+       position: absolute;
+       z-index: 2;
+       left: 150px;
+       bottom: 500px;
+}
+
+.mensajes button{
+    width: 100%;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: rgb(209, 51, 51);
+    color: white;
+    
+}
+
+.mensajes button:hover{
+    color:red;
+    background-color:rgb(255, 255, 255);
+}
+
+.imagen-banner {
+  margin: auto;
+}
+
+.resalto{
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+}
+
+.informacion-eco{
+    display: block;
+    width: 60%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+
+
+.info-1, .info-2 {
+    border: 2px solid black;
+    margin: 10px 0 0 0 ;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    justify-content: center;
+
+  }
+
+  .info-1 a{
+    
+    color: black ;
+  }
+   
+  .info-1 a:hover{
+    font-size: 30px;
+    
+
+  }
+
+   .info-1:hover{
+    background: rgb(255, 239, 16);
+    border: none;
+  
+  }
+
+  .info-2:hover{
+    background: rgb(255, 239, 16);
+    border: none;
+  
+  }
+  
+
+.info-3 button{
+    font-size: 30px;
+    padding: 20px 0;
+    border-radius:30px  ;
+    width: 100%;
+    margin: 10px 0;
+    font-weight: bold;
+    letter-spacing: 10px;
+    color: white;
+    background-color:#ad1f1f ;
+
+}
+
+.info-3 button:hover{
+  background-color:#017901; 
+}
+
+footer {
+  background-color: rgb(58, 58, 58);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 40px 10px;
+}
+
+
+footer ul{
+
+    color:white;
+    text-decoration: none;
+}
+
+footer li{
+    list-style-type: none;
+    padding: 3px 0 ;
+    
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+footer .redes{
+  font-size: 40px;
+  color: rgb(219, 219, 219);
+  padding-top: 0.1em;
+  padding-left: 16%;
+}
+
+footer .fa-twitter:hover{
+  font-size: 46px;
+  color: rgba(3, 0, 209, 0.596);
+  
+}
+
+footer .fa-square-facebook:hover{
+  font-size: 46px;
+  color: rgba(0, 143, 209, 0.596);
+  
+}
+
+footer .fa-square-share-nodes:hover{
+  font-size: 46px;
+  color: rgb(209, 171, 0);
+}

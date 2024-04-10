@@ -1,83 +1,278 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <link rel="shortcut icon" href="" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="shortcut icon" href="./recursos/img/papa-john-s-pizza-4.svg" type="image/x-icon">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- STYLE BOOTSTRAP START -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- STYLE BOOTSTRAP END -->
     <title>papaJonhsDesign</title>
 
     <style>
-        .contendor{
 
-        }
-
-        .logo img{
-            width: 15%;
-            border:3px solid red;
-            
-        }
-
-       
-        
-
-
+      
     </style>
 
 
-    
 </head>
-<body>
-<main>
+  <body>
+    <main>
+      <header>
+        <div class="caja">
+          <div class="logo" style="flex-grow: 8">
+            <a href="#">  <img src="./recursos/img/logo-papa-john-s.png" alt="papa-johns" /></a>
+          </div>
+
+          
+        </div>
+      <div class="usuario" >
+        <div class="iconos" >  
+          <a class="person" href="#"> <i class="fa-solid fa-circle-user" ></i></a>
+          <a class="ingreso" href="#campaña">  log in </a>
+        </div>
+        <div class="buscador">
+          <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Buscar..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </div>
+          </form>
+          
+        </div>
+      </div>
+        
+      </header>
+<div class="contenedor" >
+      <div class="navegador" style="border-bottom:4px solid #a0000086 ;">
+        <nav>
+
+          <ul class="servicios" >
+            <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500" > <a href="#"> PIZZAS </a></li>
+            <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500" > <a href="#"> COMBOS </a></li>
+            <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500" > <a href="#"> PAPA TALK </a></li>
+            <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500" > <a href="#"> NOSOTROS </a></li>
+            <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500" > <a href="#"> CANALES </a></li>
+          </ul>
+        </nav>
+        
+        
 
 
-<header>
-<div class="contenedor">
-    <div class="logo">
-        <img  src="./recursos/img/logo-papa-john-s.png" alt="" ></div>
+      </div>
+    </div>
+
     
-    <div class="buscador"></div>
-        <div class="usuario"></div>
+    <div class="segunda-parte" data-aos="fade-down-right" >
+        <div class="navegador-dos" >
+          <nav>
+            <ul class="especial">
+              <li> <a href="#pizzas">  PIZZAS FAVORITAS </a></li> 
+              <li> <a href="#">  PIZZAS INSIGNIAS    </a></li>
+               <li> <a href="#">  PAPA DÍAS   </a></li>
+               <li> <a href="#">  ACOMPAÑANTE    </a></li>
+               <li> <a href="#">  PIZZAS PERSONALIZADAS     </a></li>
+              <li> <a href="#">  POSTRES    </a></li>
+               <li> <a href="#">  EXTRAS    </a></li>
+               <li> <a href="#">  BEBIDAS    </a></li>
+             </ul>
+          </nav>
+        </div>
+    </div>
+  
+
+        <!--STAR BOOTSTAP CAR-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" >
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner" >
+            <div class="carousel-item active">
+              <img src="./recursos/img/pizzas-reunidas.jpg" class="d-block w-100" alt="pizzas-papa-johns">
+        <div class="banner carousel-caption d-none d-md-block">
+
+          <div class="card bg-dark" style="width: 16rem; ">
+            <img src="./recursos/img/french-fries.jpg" class="card-img-top" style="border:none;" alt="papas">
+            <div class="card-body">
+              <h5 class="card-title"> <span>  pizzas</span> y papa días</h5>
+              <p class="card-text">
+              Pizzas: elige la tuya favoritas, pizzas insignia y personlizadas
+              </p>
+              <a href="#" class="btn btn-sm btn-danger ">Solicita aquí!</a>
+            </div>
+          </div>
+
+            </div>
+            
+
+            </div>
+            <div class="carousel-item">
+              <img src="./recursos/img/pizza-corte.jpg" class="d-block w-100" alt="pizza-corte">
+              <div class="banner carousel-caption d-none d-md-block">
+
+                <div class="card bg-dark" style="width: 16rem;">
+                  <img src="./recursos/img/french-fries-1351062_960_720.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"><span>Pizzas </span> y combos especiales</h5>
+                    <p class="card-text">
+                      Solicítalo a domicilio o en nuestros puntos de venta.
+                    </p>
+                    <a href="#" class="btn btn-sm btn-danger ">Solicita aquí!</a>
+                  </div>
+                </div>
+      
+                  </div>
+
+            </div>
+            <div class="carousel-item">
+              <img src="./recursos/img/pizza-plato.jpg" class="d-block w-100" alt="pizza-plato">
+              <div class="banner carousel-caption d-none d-md-block">
+
+                <div class="card bg-dark" style="width: 16rem;">
+                  <img src="./recursos/img/pizza-plato.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"> <span> pizzas </span> <span id="letra">personalizadas</span> </h5>
+                    <p class="card-text">Al alcance de tu gusto en cualquier momento del dia.</p>
+                    <a href="#" class="btn btn-sm btn-danger ">Solicita aquí!</a>
+                  </div>
+                </div>
+      
+                  </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" style="background-color: black; border-radius: 50%; aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next"   type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" style="background-color: black; border-radius: 50%;" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        
+        <!--END BOOTSTAP CAR-->
+      
+
+
+<div class="contenedor" id="pizzas" >
+<div class="publicidad" data-aos="zoom-in-right">
+  <div class="imagen-banner">
+    <img src="./recursos/img/pizzas-reunidas.jpg" width="100%"  alt="">
+    
+      <div class="mensajes">
+
+      <button type="button" class="btn btn-outline-warning ">solicita aquí!</button>
+        
+          
+        
+
+       </div>
+    
+      </div>
+  </div>
 
 </div>
+</div>
 
-<nav>
+<div class="campaña" id="campaña">
+<div class="informacion-eco">
+  <div class="info-1" data-aos="fade-up" data-aos-duration="3000"> <a href="#"> <h1>ACO.AMAZONICO.COM</h1>  </a> </div>
+  <div class="info-2" data-aos="fade-up" data-aos-duration="3000"><h2>INICIATIVA DE RECICLAJE</h2> </div>
+  <div class="info-3" data-aos="fade-up" data-aos-duration="3000"><button type="button" onclick="alert('Súmate a eco-acompañanos a cuidar el medio ambiente')">SUMATE A ECO</button> </div>
 
-    <ul>
-        <li>PIZZAS FAVORITAS</li>
-        <li>PAPA DIAS</li>
-        <li>PAPA DIAS</li>
-        <li>ACOMPAÑANTE</li>
-        <li>PIZZAS PERSONALIZADAS</li>
-        <li>POSTRES</li>
-        <li>EXTRAS</li>
-        <li>BEBIDAS</li>
-    </ul>
+</div>
+</div>
 
-</nav>
+      
 
-</header>
+      
+
+      <footer>
+          <div class="contacto">
+          <ul>
+            <li class="resalto"> <a href="#"> Contacto</a> </li>
+            <li><a href="#">   E-mail</a> </li>
+            <li><a href="#">   soportecliente@papajohns.com</a></li>
+            <li><a href="#">   Bogotá: 606 705 05 05 </a> </li>
+            <li><a href="#">   Barranquilla: 605 361 04 06</a> </li>
+            <li><a href="#">   Armenia: 606 345 04 08 </a> </li>
+            <li><a href="#">   Cali: 602 350 03 06 </a> </li>
+            <li><a href="#">   Manizales: 606 404 04 09</a> </li>
+            <li><a href="#">   Medellín: 604 330 68 10</a> </li>
+          </ul>
+        </div>
+        <div class="acerca">
+          <ul>
+            <li class="resalto"> <a href="#">Acerca  </a></li>
+            <li> <a href="#">Nuestro Menú </a></li>
+            <li> <a href="#">Nuestra salsa de ajo </a></li>
+              <li> <a href="#">Papa johns internacional </a></li>
+              <li> <a href="#">Servicio al cliente </a></li>
+              <li> <a href="#">Sumate a eco </a></li>
+            </ul>
+          </div>
+          <div class="servicio">
+            <ul>
+              <li class="resalto"> <a href="">Servicio al cliente </a></li>
+              <li> <a href="">Preguntas frecuentes </a></li>
+              <li> <a href="">Soporte whatsapp </a></li>
+              <li> <a href="">Trabaje con nosotros </a></li>
+
+            </ul>
+
+          </div>
+          <div class="legal">
+            <ul>
+              <li class="resalto"> <a href="#">Tramites</a></li>
+              <li> <a href="#">TYC promociones</a></li>
+              <li> <a href="#">Términos y condiciones</a></li>
+              <li> <a href="#">Cookies </a></li>
+              <li> <a href="#">sic.gov.com</a></li>
+
+            </ul>
+
+            <div class="redes">
+             <a href="#">  <i class="fa-brands fa-square-facebook"></i></a>
+             <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+             <a href="#"> <i class="fa-solid fa-square-share-nodes"></i> </a>
+
+            </div>
+
+          </div>
+        
+      </footer>
+    </main>
 
 
-<section>
-    <img src="./recursos/img/pizza-plato.jpg" alt="">
+      <!-- JS BOOTSTRAP START -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/9741564cc7.js" crossorigin="anonymous"></script>
 
-</section>
-<section>
-    <img src="./recursos/img/pizza-corte.jpg" alt="">
-</section>
+<!-- JS BOOTSTRAP END -->
 
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
+<script>
+  AOS.init();
+</script>
+
+      
+
+  </body>
+  
 
 
-
-</main>
-
-
-    
-</body>
 </html>
