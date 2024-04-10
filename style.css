@@ -256,6 +256,11 @@ h5 {
 .descuento button {
   margin-top: 20px;
 }
+
+#pizzas{
+  background-color: rgb(212, 212, 212);
+ }
+
 .publicidad {
     z-index: -1;
   width: 73%;
